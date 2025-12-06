@@ -1,0 +1,24 @@
+<x-dashboard-layout>
+    <x-slot:title>
+        Create New Category - Dashboard
+    </x-slot:title>
+
+    <div class="max-w-2xl mx-auto">
+
+        <div class="mb-6">
+            <h1 class="text-3xl font-bold text-gray-800 mb-2">Create New Category</h1>
+        </div>
+
+        <div class="relative bg-neutral-primary-soft border border-default rounded-base shadow-sm p-4 md:p-6">
+
+            <div class="flex items-center justify-between border-b border-default pb-4 md:pb-5 mb-4 md:mb-6">
+                <h3 class="text-lg font-medium text-heading">
+                    Category Information
+                </h3>
+            </div>
+
+            <x-categories.form />
+        </div>
+
+    </div>
+</x-dashboard-layout>
