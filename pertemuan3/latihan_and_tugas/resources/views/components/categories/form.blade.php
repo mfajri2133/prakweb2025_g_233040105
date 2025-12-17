@@ -10,7 +10,6 @@
     <div class="grid gap-4 grid-cols-2">
         <div class="col-span-2">
             <label for="name" class="block mb-2.5 text-sm font-medium text-heading">Name</label>
-
             <input type="text" name="name" id="name" value="{{ old('name', $category->name ?? '') }}"
                 class="bg-neutral-secondary-medium border
                     @error('name') border-red-500 @else border-default-medium @enderror

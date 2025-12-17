@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DOM</title>
+    </head>
+    <body>
+        <h1 id="judul">Hello World!!</h1>
+
+        <p id="p">Paragraf 1</p>
+
+        <button id="ubah">Ubah P1</button>
+
+        <script>
+            const btn = document.getElementById("ubah");
+            const p = document.getElementById("p");
+            function ubahParagraf() {
+                p.style.backgroundColor = "lightblue";
+            }
+
+            btn.onclick = ubahParagraf;
+
+            const judul = document.getElementById("judul");
+            const ubahJudul = document.getElementById("ubahJudul");
+            ubahJudul.addEventListener("click", function () {
+                alert("Judul berhasil diubah");
+                judul.innerHTML = "Selamat Datang di Dunia Javascript";
+            });
+        </script>
+    </body>
+</html>
